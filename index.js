@@ -22,7 +22,8 @@ const createBot = (router, { appSecret, verifyToken, pageId, accessToken }) => {
     sendMessage,
     sendText, 
     sendAttachment,
-    markSeen
+    markSeen,
+    sendTypingIndicators
   } = createSendApi(eventEmitter, fetch, accessToken)
 
   const verifyRequestSignature = createVerifyRequestSignature(crypto, appSecret)
@@ -90,10 +91,6 @@ const createBot = (router, { appSecret, verifyToken, pageId, accessToken }) => {
       throw new Error('You need to specify a type.')
     }
   }
-
-  // sendRequest
-  // if onDelivery or onRead:
-  //   if event.watermark >= messageTimestamp && recipient
  
   return {
     router,
@@ -102,7 +99,8 @@ const createBot = (router, { appSecret, verifyToken, pageId, accessToken }) => {
     sendMessage,
     sendText,
     sendAttachment,
-    markSeen
+    markSeen,
+    sendTypingIndicators
   }
 
 }
