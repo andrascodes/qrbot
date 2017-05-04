@@ -1,0 +1,29 @@
+{
+  "name": "qrbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewszucs/qrbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewszucs/qrbot/issues"
+  },
+  "homepage": "https://github.com/andrewszucs/qrbot#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "crypto": "^0.0.3",
+    "events": "^1.1.1",
+    "lodash": "^4.17.4",
+    "node-fetch": "^1.6.3"
+  },
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}
