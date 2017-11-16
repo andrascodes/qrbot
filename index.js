@@ -22,8 +22,10 @@ const createBot = (router, { appSecret, verifyToken, pageId, accessToken }) => {
     sendMessage,
     sendText, 
     sendAttachment,
+    sendTemplate,
     markSeen,
-    sendTypingIndicators
+    sendTypingIndicators,
+    uploadAttachment
   } = createSendApi(eventEmitter, fetch, accessToken)
 
   const verifyRequestSignature = createVerifyRequestSignature(crypto, appSecret)
@@ -99,8 +101,10 @@ const createBot = (router, { appSecret, verifyToken, pageId, accessToken }) => {
     sendMessage,
     sendText,
     sendAttachment,
+    sendTemplate,
     markSeen,
-    sendTypingIndicators
+    sendTypingIndicators,
+    uploadAttachment
   }
 
 }
